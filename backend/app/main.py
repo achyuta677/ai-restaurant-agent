@@ -7,7 +7,7 @@ app = FastAPI(title="AI Restaurant Agent")
 app.include_router(chat.router)
 @app.on_event("startup")
 def startup_event():
-    #create_embeddings()
+    create_embeddings()
 
 # ✅ CORS (important for frontend connection)
 app.add_middleware(
